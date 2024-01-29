@@ -169,9 +169,10 @@ const slides: ISlide[] = [
     </>
   },
   {
-    children: <>
-      <iframe src="https://gcesconcordia.com" className="w-full h-[80vh]"></iframe>
-    </>
+    children: <div className="flex justify-center items-center">
+
+      <iframe src="https://gcesconcordia.com" className="w-[85vw] h-[85vh] z-50"></iframe>
+    </div>
   },
   {
     children: <>
@@ -181,7 +182,6 @@ const slides: ISlide[] = [
           <p className="font-mono text-3xl">&gt; UI: User Interface</p>
           <p className="font-mono text-3xl">&gt; UX: User Experience</p>
         </article>
-
       </div>
     </>
   },
