@@ -170,7 +170,57 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-      <iframe src="https://gcesconcordia.com" className="w-full h-[800px]"></iframe>
+      <iframe src="https://gcesconcordia.com" className="w-full h-[80vh]"></iframe>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-xl">
+          <h1>So... what is UI and UX?</h1>
+          <p className="font-mono text-3xl">&gt; UI: User Interface</p>
+          <p className="font-mono text-3xl">&gt; UX: User Experience</p>
+        </article>
+
+      </div>
+    </>
+  },
+  {
+    children: <>
+        <h1 className="text-6xl">Some examples of impressive User Interfaces</h1>
+    </>
+  },
+  {
+    children: <>
+      <h1 className="text-6xl text-center mb-2"><a href="https://evervault.com">Evervault</a></h1>
+      <iframe src="https://evervault.com" className="w-full h-[80vh]"></iframe>
+    </>
+  },
+  {
+    children: <>
+      <h1 className="text-6xl text-center"><a href="https://www.palantir.com">Palantir</a></h1>
+    </>
+  },
+  {
+    children: <>
+      <h1 className="text-center text-4xl">Modern smartphones</h1>
+      <br></br>
+      <div className="flex relative justify-center">
+        <div className="h-72 w-72 relative">
+
+        <Image src="/assets/iphone.png" fill={true} alt="iphone" className="object-contain"></Image>
+        </div>
+        <div className="h-72 w-72 relative">
+
+        <Image src="/assets/pixel.png" fill={true} alt="pixel" className="object-contain"></Image>
+        </div>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <h1 className="text-6xl text-center mb-2"><a href="https://bruno-simon.com/">{`Bruno Simon's Portfolio`}</a></h1>
+      <iframe src="https://bruno-simon.com/" className="w-full h-[80vh]"></iframe>
     </>
   },
   {

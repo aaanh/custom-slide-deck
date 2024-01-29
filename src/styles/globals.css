@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
