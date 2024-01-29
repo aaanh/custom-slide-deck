@@ -1,4 +1,4 @@
-import { ISlide } from ".";
+import { ISlide } from "./pages";
 import Image from "next/image"
 import SponsorCard, { SponsorCardProps, Tier } from "@/SponsorCard";
 import sponsors from "@/sponsors";

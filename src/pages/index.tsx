@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { ReactNode, useState, useEffect } from "react";
-import slides from "./slides";
+import slides from "../slides";
 
 const inter = Inter({ subsets: ["latin"] });
 
