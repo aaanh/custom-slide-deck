@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { ReactNode, useState, useEffect } from "react";
 import slides from "../slides";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -74,10 +75,15 @@ export default function Home() {
 
 
   return (
-    <main
-      className={`flex flex-col ${inter.className}`}
-    >
-      {slides.map((slide: ISlide, idx: number) => currentSlide == idx ? <Slide totalSlides={totalSlides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} date={date.toDateString()} key={idx} id={idx.toString()}>{slide.children}</Slide> : null)}
-    </main>
+    <>
+      <Head>
+        <title>UpStart 2024 | UI/UX Workshop</title>
+      </Head>
+      <main
+        className={`flex flex-col ${inter.className}`}
+      >
+        {slides.map((slide: ISlide, idx: number) => currentSlide == idx ? <Slide totalSlides={totalSlides} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} date={date.toDateString()} key={idx} id={idx.toString()}>{slide.children}</Slide> : null)}
+      </main>
+    </>
   );
 }

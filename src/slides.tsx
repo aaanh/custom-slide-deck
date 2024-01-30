@@ -6,32 +6,32 @@ import sponsors from "@/sponsors";
 const experience: { company: string, position: string, year: string }[] = [
   {
     company: "SimWell",
-    position: "Simulation Software Consultant (Part-time)",
+    position: "Simulation Software Consultant",
     year: "2024"
   },
   {
     company: "Microsoft",
-    position: "Software Developer (Intern)",
+    position: "Software Developer",
     year: "2023"
   },
   {
     company: "Nuance",
-    position: "Software Developer (Intern)",
+    position: "Software Developer",
     year: "2023"
   },
   {
     company: "Genetec",
-    position: "Software Developer (Intern)",
+    position: "Software Developer",
     year: "2022"
   },
   {
     company: "Genetec",
-    position: "IT Specialist (Intern)",
+    position: "IT Specialist",
     year: "2021"
   },
   {
     company: "Concordia University",
-    position: "IT Analyst II (Part-time)",
+    position: "IT Analyst II",
     year: "2020 - 2023"
   },
   {
@@ -49,7 +49,7 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-      <h1 className="text-6xl text-center">🍵</h1>
+      <h1 className="text-8xl text-center">🍵</h1>
     </>
   },
   {
@@ -115,7 +115,7 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-      <h1 className="text-6xl font-bold text-center">Practical Crash Course to UI/UX for Business Products</h1>
+      <h1 className="text-6xl font-bold text-center text-green-600">Practical Crash Course to UI/UX<br></br>for Business Products</h1>
     </>
   },
   {
@@ -143,21 +143,27 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-      <div className=" flex flex-col space-y-4">
+      <div className="flex space-x-4 items-center">
+        <div className="relative h-64 w-64">
+          <Image alt="profile" fill={true} src="/assets/profile-photo.jpg" className="object-cover object-center rounded-full p-1 border-4 border-green-500"></Image>
+        </div>
+        <div className="flex flex-col space-y-4">
+
         <p>Presented by</p>
         <h1 className="font-bold text-6xl">Anh H. Nguyen</h1>
         <h2 className="text-4xl">Vice President, Technology</h2>
         <h2 className="text-4xl">Gina-Cody School Entrepreneurship Society (GCES)</h2>
+        </div>
       </div>
     </>
   },
   {
     children: <>
-      <div className="flex space-x-8 items-center">
+      <div className="flex space-x-8 items-center justify-center">
         <h1 className="text-6xl text-center">Experience👨‍💻</h1>
         <div className="h-96 w-1 border-r-4 border-black"></div>
         <div className="flex flex-wrap">
-          {experience.map((exp, idx: number) => <div key={idx} className="relative items-center flex flex-col m-4 w-72 bg-neutral-800 rounded-lg px-4 py-2">
+          {experience.map((exp, idx: number) => <div key={idx} className="relative items-center flex flex-col m-4 w-80 bg-neutral-800 rounded-lg px-4 py-2">
             <div className="relative h-24 w-[175px]">
               <Image src={`/logos/${exp.company}.png`} className="object-contain bg-transparent transition-all ease-in-out px-2 rounded" fill={true} alt={exp.company}></Image>
             </div>
