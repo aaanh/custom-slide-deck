@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { ISlide } from "./pages";
 import Image from "next/image"
 import SponsorCard, { SponsorCardProps, Tier } from "@/SponsorCard";
@@ -54,17 +55,17 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-    <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
 
-      <h1 className="text-6xl">Sponsors</h1>
-      <div className="my-8 flex flex-col">
-        <div
-          id="silver-sponsors"
-          className="scale-[125%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0 mb-8"
-        >
-          {sponsors.map(
-            (sponsor: SponsorCardProps, index: number) =>
-              sponsor.tier === Tier.Silver &&
+        <h1 className="text-6xl">Sponsors</h1>
+        <div className="my-8 flex flex-col">
+          <div
+            id="silver-sponsors"
+            className="scale-[125%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0 mb-8"
+          >
+            {sponsors.map(
+              (sponsor: SponsorCardProps, index: number) =>
+                sponsor.tier === Tier.Silver &&
                 <SponsorCard
                   displayName={sponsor.displayName}
                   link={sponsor.link}
@@ -72,50 +73,50 @@ const slides: ISlide[] = [
                   key={index}
                 ></SponsorCard>
 
-          )}
-        </div>
+            )}
+          </div>
 
-        <div
-          id="bronze-sponsors"
-          className="scale-[60%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0"
-        >
-          {sponsors.map(
-            (sponsor: SponsorCardProps, index: number) =>
-              sponsor.tier === Tier.Bronze && (
-                <SponsorCard
-                  displayName={sponsor.displayName}
-                  link={sponsor.link}
-                  tier={sponsor.tier}
-                  key={index}
-                ></SponsorCard>
-              )
-          )}
-        </div>
+          <div
+            id="bronze-sponsors"
+            className="scale-[60%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0"
+          >
+            {sponsors.map(
+              (sponsor: SponsorCardProps, index: number) =>
+                sponsor.tier === Tier.Bronze && (
+                  <SponsorCard
+                    displayName={sponsor.displayName}
+                    link={sponsor.link}
+                    tier={sponsor.tier}
+                    key={index}
+                  ></SponsorCard>
+                )
+            )}
+          </div>
 
-        <div
-          id="inkind-sponsors"
-          className="scale-[60%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-8 sm:space-y-0"
-        >
-          {sponsors.map(
-            (sponsor: SponsorCardProps, index: number) =>
-              sponsor.tier === Tier.InKind && (
-                <SponsorCard
-                  displayName={sponsor.displayName}
-                  link={sponsor.link}
-                  tier={sponsor.tier}
-                  key={index}
-                ></SponsorCard>
-              )
-          )}
+          <div
+            id="inkind-sponsors"
+            className="scale-[60%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-8 sm:space-y-0"
+          >
+            {sponsors.map(
+              (sponsor: SponsorCardProps, index: number) =>
+                sponsor.tier === Tier.InKind && (
+                  <SponsorCard
+                    displayName={sponsor.displayName}
+                    link={sponsor.link}
+                    tier={sponsor.tier}
+                    key={index}
+                  ></SponsorCard>
+                )
+            )}
+          </div>
         </div>
       </div>
-    </div>
 
     </>
   },
   {
     children: <>
-      <h1 className="text-6xl font-bold text-center text-green-600">Practical Crash Course to UI/UX<br></br>for Business Products</h1>
+      <h1 className="text-6xl font-bold text-center text-blue-600">Practical Crash Course to UI/UX<br></br>👏for👏Business👏Products👏<br></br>💼</h1>
     </>
   },
   {
@@ -143,16 +144,14 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-      <div className="flex space-x-4 items-center">
+      <div className="flex space-x-0 md:space-x-4 items-center flex-wrap space-y-4 md:space-y-0">
         <div className="relative h-64 w-64">
           <Image alt="profile" fill={true} src="/assets/profile-photo.jpg" className="object-cover object-center rounded-full p-1 border-4 border-green-500"></Image>
         </div>
         <div className="flex flex-col space-y-4">
-
-        <p>Presented by</p>
-        <h1 className="font-bold text-6xl">Anh H. Nguyen</h1>
-        <h2 className="text-4xl">Vice President, Technology</h2>
-        <h2 className="text-4xl">Gina-Cody School Entrepreneurship Society (GCES)</h2>
+          <h1 className="font-bold text-6xl">Anh H. Nguyen</h1>
+          <h2 className="text-4xl">Vice President, Technology</h2>
+          <h2 className="text-4xl flex items-center"><img className="h-16 w-16" alt="gces" src="/gces.png"></img>&nbsp;GCES</h2>
         </div>
       </div>
     </>
@@ -176,10 +175,12 @@ const slides: ISlide[] = [
   },
   {
     children: <div className="flex justify-center items-center">
-
       <iframe src="https://gcesconcordia.com" className="w-[85vw] h-[85vh] z-50"></iframe>
     </div>
   },
+
+  // ----- Definition of UI and UX -----
+
   {
     children: <>
       <div className="flex justify-center items-center">
@@ -193,7 +194,63 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-        <h1 className="text-6xl">Some examples of impressive User Interfaces</h1>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-xl">
+          <h1>Can you define UI?</h1>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-xl">
+          <h1>User Interface</h1>
+          <ul>
+            <li>Users interact with their senses</li>
+            <li className="opacity-0">
+              Who are users?
+              <ul>
+                <li>website visitors</li>
+                <li>buyers</li>
+                <li>your coworkers</li>
+                <li>your grandmom</li>
+                <li>you 🫵</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-xl">
+          <h1>User Interface</h1>
+          <ul>
+            <li>Users interact with their senses</li>
+            <li>
+              Who are users?
+              <ul>
+                <li>website visitors</li>
+                <li>buyers</li>
+                <li>your coworkers</li>
+                <li>your grandmom</li>
+                <li>you 🫵</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+
+  // ----- Examples of UI's -----
+
+  {
+    children: <>
+      <h1 className="text-6xl">Some examples of impressive User Interfaces</h1>
     </>
   },
   {
@@ -214,11 +271,11 @@ const slides: ISlide[] = [
       <div className="flex relative justify-center">
         <div className="h-72 w-72 relative">
 
-        <Image src="/assets/iphone.png" fill={true} alt="iphone" className="object-contain"></Image>
+          <Image src="/assets/iphone.png" fill={true} alt="iphone" className="object-contain"></Image>
         </div>
         <div className="h-72 w-72 relative">
 
-        <Image src="/assets/pixel.png" fill={true} alt="pixel" className="object-contain"></Image>
+          <Image src="/assets/pixel.png" fill={true} alt="pixel" className="object-contain"></Image>
         </div>
       </div>
     </>

@@ -9,6 +9,7 @@ const createSponsor = (displayName: string, tier: Tier, link: string): SponsorCa
 }
 
 const sponsors: SponsorCardProps[] = [
+  createSponsor("Adobe", Tier.Silver, "https://www.adobe.com/"),
   createSponsor("Ferique", Tier.Silver, "https://www.ferique.com/"),
   createSponsor("Hatch", Tier.Silver, "https://www.hatch.com/"),
   createSponsor("Nav Canada", Tier.Bronze, "https://www.navcanada.ca/"),
