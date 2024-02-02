@@ -138,7 +138,6 @@ const slides: ISlide[] = [
       <div className="flex justify-center w-full items-center">
         <article className="prose prose-2xl">
           <h1>Why should I care?</h1>
-
           <p className="text-4xl">{`You think...`}</p>
           <blockquote>{`My products' usefulness speaks for themselves. Users will be swarming and paying big bucks for them.`}</blockquote>
           <Image src="/assets/stonk.jpg" width={500} height={500} alt="stonk"></Image>
