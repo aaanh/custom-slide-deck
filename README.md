@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GCES UpStart 2024 Workshop on UI/UX
 
-## Getting Started
+This is a custom React Nextjs web application for building highly customized with low-level (more like source code level) manipulation slide decks.
 
-First, run the development server:
+## Raison d'etre
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+I did not choose PowerPoint or any other presentation software to build my slide deck for the event because I want to have a programmatically ([not that PowerPoint can't be used as a programming language](https://www.youtube.com/watch?v=_3loq22TxSc)) themed, styled, and rendered content display system that does not trouble me with configuring layouts, alignments, or any of those point and click or drag and drop shenanigans.
+
+I WANT TO LOOK COOL AS SHxT MAKING A POWERPOINT. THAT'S WHY, OK?
+
+## Features
+
+- Backward and Forward navigation
+  - Using left-right arrow keys
+  - Using your Thinkpad nipple (or touchpad, or mouse, whatever)
+- Script (file) page for all of you goldfish-brained like me out there
+- Basically you can code and style your slides using TSX and Tailwind
+- Responsive design with support for like 90% of screen sizes on all laptop/desktop systems and 5% of all mobile devices
+- Quickly access your script so you don't look like a fool in front of everyone
+- Instrinsics:
+  - Have your slides source controlled with git ✅
+  - Share it anywhere (by hosting on whatever platform you want) ✅
+
+## How to use
+
+### Prerequisites
+
+- Install node >= v20
+- Install git
+
+### Run locally
+
+On Mac or Linux
+
+```sh
+# Clone this repo
+git clone https://github.com/aaanh/gces-upstart-uiux-slidedeck.git myNotPowerpointProject # replace this with a name you vibe with
+cd [myNotPowerpointProject] && npm i && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+On Windows (powershell)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```powershell
+git clone https://github.com/aaanh/gces-upstart-uiux-slidedeck.git myNotPowerpointProject # replace this with a name you vibe with
+cd [myNotPowerpointProject]; npm i; npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Editing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can add slides in the `slides` array in `src/slides.tsx`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can write your script in Markdown in `pages/script.mdx`.
 
-## Learn More
+### Previewing
 
-To learn more about Next.js, take a look at the following resources:
+Your slides are shown at `localhost:3000/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Your script is rendered at `localhost:3000/script`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Note: Replace `localhost:3000` if an IP address or domain name when you have it deployed somewhere.

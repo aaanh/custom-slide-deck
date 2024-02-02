@@ -50,7 +50,21 @@ const slides: ISlide[] = [
   },
   {
     children: <>
-      <h1 className="text-8xl text-center">🍵</h1>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-xl">
+
+          <h1 className="text-8xl text-center">🍵</h1>
+          <br></br>
+          <h2>⚠️ Disclaimers</h2>
+          <ul>
+            <li>{`By attending this workshop, you have agreed to the following disclaimers.`}</li>
+            <li>{`The views, opinions, operations, and any other at all content owned by me and my account DO NOT represent the views, opinions, works or any at all of my past, present, and current employers, unless explicitly stated.`}</li>
+            <li>{`I do not assume any responsibility for injuries, damages, or losses that may result from the use or reliance upon the information provided. By participating in this infosession, you acknowledge and agree to release us from any and all claims, liabilities, or damages arising from or in connection with the use of the materials presented.`}</li>
+            <li>{`Viewers' dicretion is advised.`}</li>
+          </ul>
+
+        </article>
+      </div>
     </>
   },
   {
@@ -276,17 +290,54 @@ const slides: ISlide[] = [
   {
     children: <>
       <div className="flex flex-col justify-center items-center">
+        <h1 className="text-6xl">Iterate, Innovate, and Incorporate</h1>
+        <br></br>
         <div className="flex justify-center items-center">
           <img alt="bandwagon" className="h-[400px]" src="/assets/bandwagon.webp"></img>
-          <span className="text-6xl">➡️</span>
+          <span className="text-6xl">&nbsp;➡️&nbsp;</span>
           <img alt="stm" className="h-[400px]" src="/assets/stm.jpg"></img>
         </div>
         <div className="prose-xl prose">
           <blockquote className="text-4xl">
-            <p>{`La STM vous souhaite la bienvenue à bord`}</p>...
-            <p>{`Merci d'avoir voyagé avec la STM.`}</p>
+            <p>{`La STM vous souhaite la bienvenue à bord`}</p>
           </blockquote>
         </div>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>User Interface</h1>
+          <h2>Design Principles</h2>
+          <ul>
+            <li>Consistency</li>
+            <li>Clarity</li>
+            <li>Accessibility</li>
+            <li>Efficiency</li>
+            <li>Familiarity</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>User Interface</h1>
+          <h2>Design Process</h2>
+          <ul>
+            <li>Define your target audience 🎯</li>
+            <li>Survey the market 👀</li>
+            <li>Define features and business requirements (user stories) 📜</li>
+            <li>Create a mockup 🤖</li>
+            <li>Test 🧪</li>
+            <li>Get feedback 👍</li>
+            <li>... and iterate over again 🔄</li>
+          </ul>
+        </article>
       </div>
     </>
   },
@@ -314,10 +365,13 @@ const slides: ISlide[] = [
           <h1>UI toolings / Prototyping</h1>
           <ul>
             <li>
-              <a href="https://www.figma.com">Figma</a> from Adobe
+              <a href="https://www.figma.com">Figma</a>
             </li>
             <li>
               <a href="https://penpot.app">Penpot</a>
+            </li>
+            <li>
+              <a href="https://adobe.com">Photoshop or Illustrator</a>
             </li>
             <li>
               <a href="https://webflow.com">Webflow</a>
@@ -434,6 +488,68 @@ const slides: ISlide[] = [
             <li>
               <a href="https://jestjs.io">Jest</a>
             </li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>Okay, now can you define UX?</h1>
+          <ul className="opacity-0">
+            <li>Subconscious rating system</li>
+            <li>Performance of the UI</li>
+            <li>Accessibility</li>
+            <li>Emotional response</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>Okay, now can you define UX?</h1>
+          <ul className="">
+            <li>Subconscious rating system</li>
+            <li>Performance of the UI</li>
+            <li>Accessibility</li>
+            <li>Emotional response</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>Time for a demo</h1>
+          <h2 className="opacity-0">Give me:</h2>
+          <ul className="opacity-0">
+            <li>An industry</li>
+            <li>Company name</li>
+            <li>What does it do?</li>
+            <li>Three colors</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>Time for a demo</h1>
+          <h2>Give me:</h2>
+          <ul>
+            <li>An industry</li>
+            <li>Company name</li>
+            <li>What does it do?</li>
+            <li>Three colors</li>
           </ul>
         </article>
       </div>
