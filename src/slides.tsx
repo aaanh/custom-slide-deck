@@ -179,7 +179,7 @@ const slides: ISlide[] = [
     </div>
   },
 
-  // ----- Definition of UI and UX -----
+  // ----- What is UI/UX -----
 
   {
     children: <>
@@ -192,11 +192,14 @@ const slides: ISlide[] = [
       </div>
     </>
   },
+
+  // ----- Definition of UI -----
+
   {
     children: <>
       <div className="flex justify-center items-center">
         <article className="prose prose-xl">
-          <h1>Can you define UI?</h1>
+          <h1>Can you define UI? 🤔</h1>
         </article>
       </div>
     </>
@@ -204,12 +207,12 @@ const slides: ISlide[] = [
   {
     children: <>
       <div className="flex justify-center items-center">
-        <article className="prose prose-xl">
+        <article className="prose prose-2xl">
           <h1>User Interface</h1>
           <ul>
             <li>Users interact with their senses</li>
             <li className="opacity-0">
-              Who are users?
+              {`Who are these "users?"`}
               <ul>
                 <li>website visitors</li>
                 <li>buyers</li>
@@ -217,6 +220,113 @@ const slides: ISlide[] = [
                 <li>your grandmom</li>
                 <li>you 🫵</li>
               </ul>
+            </li>
+            <li className="opacity-0">{`Multi-faceted, encompassing, and complex concept`}</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>User Interface</h1>
+          <ul>
+            <li>Users interact with their senses</li>
+            <li>
+              {`Who are these "users?"`}
+              <ul>
+                <li>website visitors</li>
+                <li>buyers</li>
+                <li>your coworkers</li>
+                <li>your grandmom</li>
+                <li>you 🫵</li>
+              </ul>
+            </li>
+            <li className="opacity-0">{`Multi-faceted, encompassing, and complex concept`}</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>User Interface</h1>
+          <ul>
+            <li>Users interact with their senses</li>
+            <li>
+              {`Who are these "users?"`}
+              <ul>
+                <li>website visitors</li>
+                <li>buyers</li>
+                <li>your coworkers</li>
+                <li>your grandmom</li>
+                <li>you 🫵</li>
+              </ul>
+            </li>
+            <li>{`Multi-faceted, encompassing, and complex concept`}</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex justify-center items-center">
+          <img alt="bandwagon" className="h-[400px]" src="/assets/bandwagon.webp"></img>
+          <span className="text-6xl">➡️</span>
+          <img alt="stm" className="h-[400px]" src="/assets/stm.jpg"></img>
+        </div>
+        <div className="prose-xl prose">
+          <blockquote className="text-4xl">
+            <p>{`La STM vous souhaite la bienvenue à bord`}</p>...
+            <p>{`Merci d'avoir voyagé avec la STM.`}</p>
+          </blockquote>
+        </div>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>UI toolings</h1>
+          <ul>
+            <li>Prototyping</li>
+            <li>Sketching</li>
+            <li>Diagramming</li>
+            <li>Design system</li>
+            <li>Component library</li>
+            <li>Testing</li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>UI toolings / Prototyping</h1>
+          <ul>
+            <li>
+              <a href="https://www.figma.com">Figma</a> from Adobe
+            </li>
+            <li>
+              <a href="https://penpot.app">Penpot</a>
+            </li>
+            <li>
+              <a href="https://webflow.com">Webflow</a>
+            </li>
+            <li>
+              <a href="https://framer.com">Framer</a>
+            </li>
+            <li>
+              <a href="https://vercel.com">v0 by Vercel</a>
             </li>
           </ul>
         </article>
@@ -226,19 +336,103 @@ const slides: ISlide[] = [
   {
     children: <>
       <div className="flex justify-center items-center">
-        <article className="prose prose-xl">
-          <h1>User Interface</h1>
+        <article className="prose prose-2xl">
+          <h1>UI toolings / Sketching</h1>
           <ul>
-            <li>Users interact with their senses</li>
             <li>
-              Who are users?
-              <ul>
-                <li>website visitors</li>
-                <li>buyers</li>
-                <li>your coworkers</li>
-                <li>your grandmom</li>
-                <li>you 🫵</li>
-              </ul>
+              <a href="https://tldraw.com">tldraw.com</a>
+            </li>
+            <li>
+              <a href="https://www.sketch.com">Sketch</a>
+            </li>
+            <li>
+              <a href="https://www.invisionapp.com">InVision</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>UI toolings / Diagramming</h1>
+          <ul>
+            <li>
+              <a href="https://www.microsoft.com/en-ca/microsoft-365/visio/flowchart-software">Microsoft Visio</a>
+            </li>
+            <li>
+              <a href="https://www.lucidchart.com">Lucidchart</a>
+            </li>
+            <li>
+              <a href="https://draw.io">Draw.io</a>
+            </li>
+            <li>
+              <a href="https://miro.com">Miro</a>
+            </li>
+            <li>
+              <a href="https://whimsical.com">Whimsical</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>UI toolings / Design System</h1>
+          <ul>
+            <li>
+              <a href="https://tailwindcss.com">Tailwind CSS</a>
+            </li>
+            <li>
+              <a href="https://getbootstrap.com">Bootstrap</a>
+            </li>
+            <li>
+              <a href="https://material-ui.com">Material UI</a>
+            </li>
+            <li>
+              <a href="https://ant.design">Ant Design</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>UI toolings / Component Library</h1>
+          <ul>
+            <li>
+              <a href="https://storybook.js.org">Storybook</a>
+            </li>
+            <li>
+              <a href="https://bit.dev">Bit</a>
+            </li>
+            <li>
+              <a href="https://www.chromatic.com">Chromatic</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </>
+  },
+  {
+    children: <>
+      <div className="flex justify-center items-center">
+        <article className="prose prose-2xl">
+          <h1>UI toolings / Testing</h1>
+          <ul>
+            <li>
+              <a href="https://www.cypress.io">Cypress</a>
+            </li>
+            <li>
+              <a href="https://jestjs.io">Jest</a>
             </li>
           </ul>
         </article>

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ReactNode, useState, useEffect } from "react";
 import slides from "../slides";
 import Head from "next/head";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export interface ISlide {
   totalSlides?: number
 }
 
-const Slide = ({ children, id, date, setCurrentSlide, currentSlide, totalSlides }: ISlide) => {
+export const Slide = ({ children, id, date, setCurrentSlide, currentSlide, totalSlides }: ISlide) => {
 
   return <section id={id} className="text-2xl border-4 border-black min-h-[98vh] rounded-lg m-2 p-8 flex flex-col justify-center relative">
 
@@ -24,16 +25,16 @@ const Slide = ({ children, id, date, setCurrentSlide, currentSlide, totalSlides 
     {
       setCurrentSlide !== undefined && currentSlide !== undefined && totalSlides !== undefined ? <>
 
-      <button onClick={() => { setCurrentSlide(currentSlide === 0 ? totalSlides - 1 : currentSlide - 1) }} className="text-4xl font-mono text-white/0 hover:text-white/25 top-0 bottom-0 left-0 w-32 absolute bg-black/0 hover:bg-black/15 hover:cursor-pointer rounded-xl m-4 transition-all ease-in duration-75">
-        &lt;
-      </button>
+        <button onClick={() => { setCurrentSlide(currentSlide === 0 ? totalSlides - 1 : currentSlide - 1) }} className="text-6xl font-mono text-white/0 hover:text-blue-500 font-bold top-0 bottom-0 left-0 w-32 absolute bg-black/0 hover:bg-black/15 hover:cursor-pointer rounded-xl m-4 transition-all ease-in duration-75">
+          &lt;
+        </button>
 
-      <button onClick={() => { setCurrentSlide(currentSlide === totalSlides - 1 ? 0 : currentSlide + 1) }} className="text-4xl font-mono text-white/0 hover:text-white/25 top-0 bottom-0 right-0 w-32 absolute bg-black/0 hover:bg-black/15 hover:cursor-pointer rounded-xl m-4 transition-all ease-in duration-75">
-        &gt;
-      </button>
+        <button onClick={() => { setCurrentSlide(currentSlide === totalSlides - 1 ? 0 : currentSlide + 1) }} className="text-6xl font-bold font-mono text-white/0 hover:text-blue-500 top-0 bottom-0 right-0 w-32 absolute bg-black/0 hover:bg-black/15 hover:cursor-pointer rounded-xl m-4 transition-all ease-in duration-75">
+          &gt;
+        </button>
 
       </>
-      : null
+        : null
     }
 
 
@@ -41,8 +42,11 @@ const Slide = ({ children, id, date, setCurrentSlide, currentSlide, totalSlides 
     {/* ---------- */}
 
 
-    { children }
-    <span className="text-lg absolute bottom-2 right-2">page {id ? Number(id) + 1 : null} | { date }</span>
+    {children}
+    <span className="text-lg absolute bottom-2 right-2">page {id ? Number(id) + 1 : null} | {date}</span>
+    <span className="text-lg absolute bottom-2 left-2">&copy; <a className="underline underline-offset-2" href="https://aaanh.com">Anh H. Nguyen</a>, {date?.substring(date?.length - 4)}</span>
+    <span className="text-lg absolute top-2 left-2 text-rose-500">Confidentiality: 🥷🥷🥷🥷🥷</span>
+    <Link href="/script" className="text-lg absolute bottom-2 left-1/2 rounded-full bg-black/0 h-8 w-8 hover:bg-black/25 flex justify-center items-center hover:no-underline">📜</Link>
   </section>
 }
 
