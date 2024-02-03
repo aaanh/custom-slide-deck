@@ -74,8 +74,24 @@ const slides: ISlide[] = [
         <h1 className="text-6xl">Sponsors</h1>
         <div className="my-8 flex flex-col">
           <div
-            id="silver-sponsors"
+            id="gold-sponsors"
             className="scale-[125%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0 mb-8"
+          >
+            {sponsors.map(
+              (sponsor: SponsorCardProps, index: number) =>
+                sponsor.tier === Tier.Gold &&
+                <SponsorCard
+                  displayName={sponsor.displayName}
+                  link={sponsor.link}
+                  tier={sponsor.tier}
+                  key={index}
+                ></SponsorCard>
+
+            )}
+          </div>
+          <div
+            id="silver-sponsors"
+            className="flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0 mb-8"
           >
             {sponsors.map(
               (sponsor: SponsorCardProps, index: number) =>
@@ -92,7 +108,7 @@ const slides: ISlide[] = [
 
           <div
             id="bronze-sponsors"
-            className="scale-[60%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0"
+            className="scale-[75%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0"
           >
             {sponsors.map(
               (sponsor: SponsorCardProps, index: number) =>
@@ -109,7 +125,7 @@ const slides: ISlide[] = [
 
           <div
             id="inkind-sponsors"
-            className="scale-[60%] flex flex-wrap items-center justify-center space-y-2 sm:space-x-8 sm:space-y-0"
+            className="scale-[65%] -translate-y-10 flex flex-wrap items-center justify-center space-y-2 sm:space-x-8 sm:space-y-0"
           >
             {sponsors.map(
               (sponsor: SponsorCardProps, index: number) =>
