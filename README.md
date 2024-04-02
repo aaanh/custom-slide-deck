@@ -1,4 +1,6 @@
-# GCES UpStart 2024 Workshop on UI/UX
+# Custom Slide Deck
+
+Formerly: GCES UpStart 2024 Workshop on UI/UX
 
 This is a custom React Nextjs web application for building highly customized with low-level (more like source code level) manipulation slide decks.
 
