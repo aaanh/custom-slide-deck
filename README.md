@@ -59,4 +59,4 @@ Your slides are shown at `localhost:3000/`
 
 Your script is rendered at `localhost:3000/script`
 
-Note: Replace `localhost:3000` if an IP address or domain name when you have it deployed somewhere.
+Note: Replace `localhost:3000` with an IP address or domain name when you have it deployed somewhere.
